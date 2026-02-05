@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<network-security-config>
+    <!-- Allow HTTPS connections to Supabase and other secure endpoints -->
+    <base-config cleartextTrafficPermitted="false">
+        <trust-anchors>
+            <!-- Trust preinstalled CAs -->
+            <certificates src="system" />
+            <!-- Additionally trust user added CAs -->
+            <certificates src="user" />
+        </trust-anchors>
+    </base-config>
+    
+    <!-- Allow connections to Supabase domains -->
+    <domain-config cleartextTrafficPermitted="false">
+        <domain includeSubdomains="true">supabase.co</domain>
+        <domain includeSubdomains="true">otauiydzyxomodpmgggc.supabase.co</domain>
+        <trust-anchors>
+            <certificates src="system" />
+            <certificates src="user" />
+        </trust-anchors>
+    </domain-config>
+</network-security-config>
+
