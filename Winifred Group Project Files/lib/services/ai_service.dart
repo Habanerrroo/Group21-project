@@ -394,4 +394,7 @@ class AIService {
     }
   }
 }
+<<<<<<< HEAD:SafeCampus/lib/services/ai_service.dart
 
+=======
+>>>>>>> cad0ad45520ed19eb64d8ee7360f839626eea7dc:Winifred Group Project Files/lib/services/ai_service.dart
